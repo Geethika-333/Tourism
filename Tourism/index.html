@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="sectionHome">
+      <div class="bg-container d-flex flex-column justify-content-end">
+        <div class="tourism-card">
+          <h1 class="main-heading"><span class="myHeading">T</span>hrive <span class="myHeading">T</span>hrough <span class="myHeading">T</span>ravel</h1>
+          <p class="paragraph">Plan your trip</p>
+          <button class="button" onclick="display('sectionFavouritePlaces')">Get Started</button>
+        </div>
+      </div>
+    </div>
+    <div id="sectionFavouritePlaces">
+      <div class="favourite-places-bg-container">
+       <h1 class="favourite-places-heading">Historical Places</h1>
+       <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionTajMahalDetailedView')">
+         <div>
+           <h1 class="favourite-place-card-heading">Taj Mahal</h1>
+           <p class="favourite-place-card-description">
+             If there was just one symbol to represent all of India, it would be the
+             Taj Mahal
+           </p>
+         </div>
+         <img
+           src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-img.png"
+           class="favourite-place-card-image"
+         />
+       </div>
+       <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionGoldenTempleDetailedView')">
+         <div>
+           <h1 class="favourite-place-card-heading">Golden Temple</h1>
+           <p class="favourite-place-card-description">
+             Amritsar is world-famous for the beautiful and highly revered Golden
+             Temple
+           </p>
+         </div>
+         <img
+           src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/golden-temple-img.png"
+           class="favourite-place-card-image"
+         />
+       </div>
+       <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionMysorePalaceDetailedView')">
+         <div>
+           <h1 class="favourite-place-card-heading">Mysore Palace</h1>
+           <p class="favourite-place-card-description">
+             The Mysore Palace is a historical palace and the royal residence at
+             Mysore .
+           </p>
+         </div>
+         <img
+           src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/mysore-palace-img.png"
+           class="favourite-place-card-image"
+         />
+       </div>
+       <div class="favourite-place-card-container d-flex flex-row " onclick="display('sectionVaranasiDetailedView')">
+         <div>
+           <h1 class="favourite-place-card-heading">Varanasi Temple</h1>
+           <p class="favourite-place-card-description">
+             Varanasi Temple is most famous Hindu temples dedicated to Lord Shiva
+           </p>
+         </div>
+         <img
+           src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/varanasi-temple-img.png"
+           class="favourite-place-card-image"
+         />
+       </div>
+       <div class="favourite-place-card-container d-flex flex-row " onclick="display('sectionRedFortDetailedView')">
+        <div>
+          <h1 class="favourite-place-card-heading">Red Fort</h1>
+          <p class="favourite-place-card-description">
+            The Red Fort is a historic fort in the Old Delhi neighbourhood of India. 
+          </p>
+        </div>
+        <img
+          src="https://static.toiimg.com/img/65666850/Master.jpg"
+          class="favourite-place-card-image"
+        />
+      </div>
+       <button class="btn btn-dark" onclick="display('sectionHome')">back</button>
+      </div>
+    </div>
+    <div id="sectionTajMahalDetailedView">
+      <div class="detailed-view-bg-container">
+        <h1 class="detailed-view-heading">Detailed View</h1>
+        <div class="detailed-view-card-container">
+          <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-c1-img.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-c2-img.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-c3-img.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="detailed-view-card-text-container">
+            <h1 class="detailed-view-card-heading">Taj Mahal</h1>
+            <p class="detailed-view-card-description">
+                The Taj Mahal, a timeless masterpiece and jewel of Islamic art, stands as an enduring symbol of love and architectural brilliance in Agra, India. </p>
+                <div class="d-flex flex-row ">
+                  <div class="card-info col-4" onclick="display('sectionFood')">
+                    <h1 class="detailed-view-card-heading"> Food </h1>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpxf_X-zLfqym1ZD20Dc_UbMX1kKtVoi7jV0_zAGlZpdxglOL0XwZtd3ki&s=10" class="card-img"/>
+
+                  </div>
+                  <div class="card-info col-4" onclick="display('sectionStay')">
+                    <h1 class="detailed-view-card-heading" >Stay</h1>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1_Tbrpj7itff3YEFEZGwKAlAVPkmYNgUD5Q&usqp=CAU" class="card-img"/>
+                  </div>
+                  <div class="card-info col-4" onclick="display('sectionPlaces')">
+                    <h1 class="detailed-view-card-heading">Nearby places to visit</h1>
+                    <img src="https://cdn3.iconfinder.com/data/icons/map/500/nearby-512.png" class="card-img"/>
+                  </div>
+                  
+                </div>
+            <a href="https://www.makemytrip.com/"><p>Book Tickets here!!</p></a>
+          </div>
+        </div>
+        <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">
+          back
+        </button>
+      </div>
+    </div>
+    <div id="sectionGoldenTempleDetailedView">
+      <div class="detailed-view-bg-container">
+        <h1 class="detailed-view-heading">Detailed View</h1>
+        <div class="detailed-view-card-container">
+          <div id="goldenTempleCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#goldenTempleCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#goldenTempleCarousel" data-slide-to="1"></li>
+              <li data-target="#goldenTempleCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/goldentemple1-img.png" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/goldentemple2-img.png" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/goldentemple3-img.png" class="d-block w-100" alt="..." />
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#goldenTempleCarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#goldenTempleCarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="detailed-view-card-text-container">
+            <h1 class="detailed-view-card-heading">Golden Temple</h1>
+            <p class="detailed-view-card-description">
+                The Golden Temple, or Sri Harmandir Sahib, is a revered spiritual and cultural landmark located in Amritsar, Punjab, India. This sacred site is the holiest shrine in Sikhism, embodying the core values of the Sikh faith.
+
+                Built in the 16th century by Guru Arjan Dev Ji, the fifth Sikh Guru, the Golden Temple is a stunning example of Sikh architecture. The central structure is surrounded by the Amrit Sarovar, a sacred pool, symbolizing the nectar of immortality. The temple itself is adorned with gold leaf, giving it a radiant and resplendent appearance, hence its name.
+                
+                A unique aspect of the Golden Temple is its four entrances, symbolizing openness and acceptance of people from all walks of life, regardless of their caste, creed, or religion. The temple complex also includes the Akal Takht, the highest temporal seat of authority in Sikhism, emphasizing the importance of spiritual and temporal balance.
+                
+                Inside the sanctum sanctorum, the Guru Granth Sahib, the holy scripture of Sikhism, is enshrined. The hymns from the scripture are recited, creating a serene and devotional atmosphere. The community kitchen, or Langar, exemplifies the Sikh principle of selfless service, providing free meals to thousands of visitors daily.
+                
+                Visitors from all over the world are drawn to the Golden Temple to experience its spiritual aura, architectural beauty, and the warmth of Sikh hospitality. The daily rituals, the soothing Gurbani (Sikh hymns), and the reflections in the Amrit Sarovar contribute to the spiritual ambiance that permeates the entire complex.
+                
+                The Golden Temple stands as a symbol of peace, equality, and unity, embodying the essence of Sikh philosophy and serving as a beacon of hope for humanity.
+            </p>
+            <ol class="detailed-view-card-description">
+              <li>Jallianwala Bagh</li>
+              <li>Wagah Border</li>
+              <li>Harike Wetland</li>
+              <li>Bathinda Fort</li>
+            </ol>
+            <a href="https://www.makemytrip.com/"><p>Book Tickets here!!</p></a>
+          </div>
+        </div>
+        <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">
+          back
+        </button>
+      </div>
+    </div>
+    <div id="sectionMysorePalaceDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+              <div id="mysorePalaceCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#mysorePalaceCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#mysorePalaceCarousel" data-slide-to="1"></li>
+                  <li data-target="#mysorePalaceCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/mysore-palace1-img.png" class="d-block w-100" alt="..." />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/mysore-palace2-img.png" class="d-block w-100" alt="..." />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/mysore-palace3-img.png" class="d-block w-100" alt="..." />
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#mysorePalaceCarousel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#mysorePalaceCarousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+              <div class="detailed-view-card-text-container">
+                <h1 class="detailed-view-card-heading">Mysore Palace</h1>
+                <p class="detailed-view-card-description">
+                    The Mysore Palace, also known as the Amba Vilas Palace, is an enchanting architectural marvel nestled in the heart of Mysuru, Karnataka, India. Built in 1912, the palace stands as a testament to the opulence and grandeur of the Wodeyar dynasty, the erstwhile rulers of the Kingdom of Mysore.
+
+                    Designed by British architect Henry Irwin, the Mysore Palace is a splendid fusion of Indo-Saracenic, Rajput, Hindu, and Gothic styles. The three-story structure boasts a captivating blend of domes, arches, towers, and intricately carved facades, creating a visually stunning masterpiece.
+                    
+                    The palace's interior is equally resplendent, featuring a rich display of stained glass, mosaic floors, ornate ceilings, and elaborately carved doors. The Ambavilasa, the grand Durbar Hall, is a highlight with its colossal chandeliers and a golden throne, a symbol of the Wodeyar rulers' regality.
+                    
+                    The palace comes alive during the annual Dasara festival when it is illuminated with thousands of lights, showcasing its breathtaking beauty. The sprawling palace complex also includes the Kalyana Mantapa, a marriage hall with a remarkable glass ceiling.
+                    
+                    Visitors can explore the palace's private chambers, museums, and galleries housing an extensive collection of royal artifacts, costumes, and weaponry. The palace's lush gardens and the view of the Chamundi Hills in the background enhance its scenic charm.
+                    
+                    As a UNESCO World Heritage Site, the Mysore Palace is not only a cultural treasure but also a living legacy, drawing tourists and history enthusiasts from around the world to experience the grandeur of India's royal heritage.                </p>
+                    <a href="https://www.makemytrip.com/"><p>Book Tickets here!!</p></a>
+                  </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">
+                back
+              </button>
+          </div>
+    </div>
+    <div id="sectionVaranasiDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+              <div id="varanasiTempleCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#varanasiTempleCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#varanasiTempleCarousel" data-slide-to="1"></li>
+                  <li data-target="#varanasiTempleCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/varanasi1-img.png" class="d-block w-100" alt="..." />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/varanasi2-img.png" class="d-block w-100" alt="..." />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/varanasi3-img.png" class="d-block w-100" alt="..." />
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#varanasiTempleCarousel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#varanasiTempleCarousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+              <div class="detailed-view-card-text-container">
+                <h1 class="detailed-view-card-heading">Varanasi Temple</h1>
+                <p class="detailed-view-card-description">
+                    Varanasi, one of the oldest continuously inhabited cities in the world, is a spiritual and cultural epicenter in northern India. Nestled on the banks of the sacred Ganges River in the state of Uttar Pradesh, Varanasi is steeped in history, mythology, and religious significance.
+
+                    Known as the "City of Light," Varanasi is a sacred pilgrimage site for Hindus. The ghats along the Ganges, with their ancient steps leading to the river, are integral to the city's identity. The Assi Ghat, Dashashwamedh Ghat, and Manikarnika Ghat are among the most revered, hosting daily rituals, ceremonies, and mesmerizing Ganga Aarti, where priests offer prayers to the river.
+                    
+                    Varanasi is a hub of spirituality, attracting seekers, sadhus, and devotees who come to bathe in the purifying waters of the Ganges. The Kashi Vishwanath Temple, dedicated to Lord Shiva, is a significant pilgrimage destination, drawing devotees from far and wide.
+                    
+                    The city's narrow alleys are a labyrinthine network, bustling with life, vibrant markets, and ancient temples. The Banaras Hindu University, one of the largest residential universities in Asia, adds an academic vibrancy to Varanasi.
+                    
+                    Beyond its religious significance, Varanasi is renowned for its traditional silk weaving industry, producing exquisite Banarasi saris. The city's cultural heritage is celebrated through classical music, dance, and festivals like Diwali and Holi.
+                    
+                    Varanasi's timeless charm and spiritual aura make it a captivating destination, where the ancient and the contemporary coexist harmoniously. Whether experiencing a boat ride along the Ganges at sunrise or immersing oneself in the city's cultural tapestry, Varanasi is a unique and transformative destination that leaves an indelible mark on visitors.                </p>
+                    <a href="https://www.makemytrip.com/"><p>Book Tickets here!!</p></a>
+                  </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">
+                back
+              </button>
+          </div>
+      
+    </div>
+    <div id="sectionRedFortDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+              <div id="varanasiTempleCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#varanasiTempleCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#varanasiTempleCarousel" data-slide-to="1"></li>
+                  <li data-target="#varanasiTempleCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://static.toiimg.com/img/65666850/Master.jpg" class="d-block w-100" alt="..." />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://im.rediff.com/news/2023/aug/14red-fort2.jpg?w=670&h=900" class="d-block w-100" alt="..." />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1200/lsci/db/PICTURES/CMS/156500/156512.jpg" class="d-block w-100" alt="..." />
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#varanasiTempleCarousel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#varanasiTempleCarousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+              <div class="detailed-view-card-text-container">
+                <h1 class="detailed-view-card-heading">Red Fort</h1>
+                <p class="detailed-view-card-description">
+                    The Red Fort, known locally as "Lal Qila," stands as an iconic symbol of India's rich history and cultural heritage. Located in the heart of Old Delhi, this magnificent fortress holds deep historical significance. Commissioned by the Mughal Emperor Shah Jahan in 1638, the Red Fort served as the main residence for the Mughal rulers for nearly 200 years.
+
+                    Constructed using red sandstone, the fort exhibits stunning Mughal architecture, with intricate carvings, domes, and grand gates. The Lahori Gate, named after the city of Lahore, serves as the main entrance and leads to the Chatta Chowk, a bustling market where artisans once displayed their crafts.
+                    
+                    The Diwan-i-Aam, or Hall of Public Audience, showcases the emperor's grandeur, featuring a majestic throne platform. Adjacent to it, the Diwan-i-Khas, or Hall of Private Audience, was reserved for more intimate gatherings.
+                    
+                    The fort's most celebrated structure is the Moti Masjid, a pristine white marble mosque, offering a serene contrast to the vibrant red sandstone. The sprawling complex also encompasses lush gardens, including the Hayat Bakhsh Bagh, providing a tranquil retreat.
+                    
+                    Every year, on India's Independence Day, the Red Fort becomes the focal point of celebrations. The Prime Minister hoists the national flag from the ramparts, addressing the nation with the historic structure as a backdrop.
+                    
+                    Recognized as a UNESCO World Heritage Site, the Red Fort continues to attract millions of visitors, offering a mesmerizing journey through India's regal past. It remains a living testament to the grandeur and architectural prowess of the Mughal era.
+                </p>
+                <a href="https://www.makemytrip.com/"><p>Book Tickets here!!</p></a>
+              </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">
+                back
+              </button>
+          </div>
+      
+    </div>
+    <div id="sectionFood">
+      <div class="favourite-places-bg-container">
+        <h1 class="favourite-places-heading">Restaurants</h1>
+        <div class="favourite-place-card-container d-flex flex-row">
+          <div class="d-flex flex-row">
+            <div class="d-flex flex-column">
+            <h3 class="favourite-place-card-heading">The Salt Cafe</h3>
+            <p class="favourite-place-card-description">" has all you can eat with out door seating " <br> 0.5km from tajmahal</p>
+            </div>
+            <img
+              src="https://media-cdn.tripadvisor.com/media/photo-s/26/c0/d8/e0/beautiful-3rd-level-rooftop.jpg"
+              class="favourite-place-card-image"
+            />
+          </div>
+        </div>
+        <div class="favourite-place-card-container d-flex flex-row">
+          <div class="d-flex flex-row">
+            <div class="d-flex flex-column">
+            <h3 class="favourite-place-card-heading">Tea'se Me</h3>
+            <p class="favourite-place-card-description">"#Travelers choice 2023" <br> 1km from tajmahal</p>
+            </div>
+            <img
+              src="https://media-cdn.tripadvisor.com/media/photo-s/1a/d0/e6/5d/section-3.jpg"
+              class="favourite-place-card-image"
+            />
+          </div>
+        </div>
+        <div class="favourite-place-card-container d-flex flex-row">
+          <div class="d-flex flex-row">
+            <div class="d-flex flex-column">
+            <h3 class="favourite-place-card-heading">Shivpen Ryouri Restaurent</h3>
+            <p class="favourite-place-card-description">"japanese and Indian vegan options" <br> 0.6km from tajmahal</p>
+            </div>
+            <img
+              src="https://b.zmtcdn.com/data/pictures/7/20689547/32db7706ffe93c05102fa35850fc8f3e.jpeg?fit=around|960:500&crop=960:500;*,*"
+              class="favourite-place-card-image"
+            />
+          </div>
+        </div>
+        
+        
+
+        <button class="btn btn-dark" onclick="display('sectionTajMahalDetailedView')">back</button>
+       </div>
+     </div>
+    </div>
+    <div id="sectionStay">
+      <div class="favourite-places-bg-container">
+        <h1 class="favourite-places-heading">Accomodation</h1>
+        <div class="favourite-place-card-container d-flex flex-row">
+          <div class="d-flex flex-row">
+            <div class="d-flex flex-column">
+            <h3 class="favourite-place-card-heading">Hotel Sidhartha agra</h3>
+            <p class="favourite-place-card-description">"#Budget Friendly" <br> 0.5km from tajmahal</p>
+            </div>
+            <img
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/d3/f4/86/street--v15875962.jpg?w=700&h=-1&s=1"
+              class="favourite-place-card-image"
+            />
+          </div>
+        </div>
+        <div class="favourite-place-card-container d-flex flex-row">
+          <div class="d-flex flex-row">
+            <div class="d-flex flex-column">
+            <h3 class="favourite-place-card-heading">Hotel Taj resorts</h3>
+            <p class="favourite-place-card-description">"living Luxury" <br> 1.1km from tajmahal</p>
+            </div>
+            <img
+              src="https://pix10.agoda.net/hotelImages/243640/-1/5018293a6bcc9bd779a0d9c875af6a86.jpg?ca=9&ce=1&s=414x232&ar=16x9"
+              class="favourite-place-card-image"
+            />
+          </div>
+        </div>
+        <div class="favourite-place-card-container d-flex flex-row">
+          <div class="d-flex flex-row">
+            <div class="d-flex flex-column">
+            <h3 class="favourite-place-card-heading">Hotel Atulyaa Taj</h3>
+            <p class="favourite-place-card-description">"#boutique hotel" <br> 1.1km from tajmahal</p>
+            </div>
+            <img
+              src="https://imgcld.yatra.com/ytimages/image/upload/t_hotel_yatra_details_desktop/v1411134746/Domestic%20Hotels/Hotels_Agra/Hotel%20Atulyaa%20Taj/Overview.jpg"
+              class="favourite-place-card-image"
+            />
+          </div>
+        </div>
+        
+        
+
+        <button class="btn btn-dark" onclick="display('sectionTajMahalDetailedView')">back</button>
+       </div>
+     </div>
+    </div>
+    <div id="sectionPlaces">
+      <div class="favourite-places-bg-container">
+        <h1 class="favourite-places-heading">NearBy Places</h1>
+        <div class="favourite-place-card-container d-flex flex-row">
+          <div class="d-flex flex-row">
+            <div class="d-flex flex-column">
+            <h3 class="favourite-place-card-heading">Shish mahal</h3>
+            <p class="favourite-place-card-description">"The palace of mirrors" <br> 2.5km from tajmahal</p>
+            </div>
+            <img
+              src="https://www.tourmyindia.com/states/uttarpradesh/images/sheesh-mahal-agra.jpg"
+              class="favourite-place-card-image"
+            />
+          </div>
+        </div>
+        <div class="favourite-place-card-container d-flex flex-row">
+          <div class="d-flex flex-row">
+            <div class="d-flex flex-column">
+            <h3 class="favourite-place-card-heading">Taj museum</h3>
+            <p class="favourite-place-card-description">"Section of exhibits in JalMahal" <br> 0km from tajmahal</p>
+            </div>
+            <img
+              src="https://www.exoticmiles.com/wp-content/uploads/2020/06/Taj-Museum.jpg"
+              class="favourite-place-card-image"
+            />
+          </div>
+        </div>
+        <div class="favourite-place-card-container d-flex flex-row">
+          <div class="d-flex flex-row">
+            <div class="d-flex flex-column">
+            <h3 class="favourite-place-card-heading">Moti Masjit</h3>
+            <p class="favourite-place-card-description">"the pearl Mosque of agra" <br> 3km from tajmahal</p>
+            </div>
+            <img
+              src="https://agratourism.in/images/places-to-visit/headers/moti-masjid-agra-tourism-entry-fee-timings-holidays-reviews-header.jpg"
+              class="favourite-place-card-image"
+            />
+          </div>
+        </div>
+        
+        
+
+        <button class="btn btn-dark" onclick="display('sectionTajMahalDetailedView')">back</button>
+       </div>
+     </div>
+    </div>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+  </body>
+</html>
